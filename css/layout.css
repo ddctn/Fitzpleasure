@@ -4,12 +4,62 @@ html {
 
 body {
   width: 100%;
-  display: flex;
   font-family: 'PTMono';
+  display: grid;
+
+}
+
+/*
+
+.first {
+  width: 94%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  justify-content: center;
 }
 
 .firstblock {
-  width: 66%;
-  height: 37%;
   border: 3px solid white;
+
+  background-image: url(../images/img1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 3vh;
+  color: white;
+}
+
+.firsttext {
+  margin-left: 1%;
+  margin-top: 20%;
+}
+
+.secondblock {
+  width: 28%;
+  height: 64%;
+
+  border: 3px solid white;
+}
+ 
+.secondblock img {
+  width: 99%;
+}
+
+.thirdblock {
+
+  border: 3px solid white;
+
+}
+
+.thirdblock img{
+
+  justify-self: center;
 }
