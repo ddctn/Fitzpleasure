@@ -6,10 +6,46 @@ body {
   width: 100%;
   font-family: 'PTMono';
   display: grid;
-
 }
 
-/*
+
+@keyframes h1glow {
+  0%    {opacity: 0;}
+  10%   {opacity: 0;}
+  10.1% {opacity: 1;}
+  10.2% {opacity: 0;}
+  20%   {opacity: 0;}
+  20.1% {opacity: 1;}
+  20.6% {opacity: 0;}
+  30%   {opacity: 0;}
+  30.1% {opacity: 1;}
+  30.5% {opacity: 1;}
+  30.6% {opacity: 0;}
+  45%   {opacity: 0;}
+  45.1% {opacity: 1;}
+  50%   {opacity: 1;}
+  55%   {opacity: 1;}
+  55.1% {opacity: 0;}
+  57%   {opacity: 0;}
+  57.1% {opacity: 1;}
+  60%   {opacity: 1;}
+  60.1% {opacity: 0;}
+  65%   {opacity: 0;}
+  65.1% {opacity: 1;}
+  75%   {opacity: 1;}
+  75.1% {opacity: 0;}
+  77%   {opacity: 0;}
+  77.1% {opacity: 1;}
+  85%   {opacity: 1;}
+  85.1% {opacity: 0;}
+  86%   {opacity: 0;}
+  86.1% {opacity: 1;}
+  100%  {opacity: 1;}
+}
+
+h1 {
+  animation: h1glow 3s linear infinite;
+}
 
 .first {
   width: 94%;
@@ -45,7 +81,6 @@ body {
 .secondblock {
   width: 28%;
   height: 64%;
-
   border: 3px solid white;
 }
  
@@ -54,12 +89,9 @@ body {
 }
 
 .thirdblock {
-
   border: 3px solid white;
-
 }
 
 .thirdblock img{
-
   justify-self: center;
 }
