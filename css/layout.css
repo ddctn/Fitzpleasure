@@ -2,96 +2,109 @@ html {
   background-color: black;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 body {
+  width: 100%;
+}
+
+main {
   width: 100%;
   font-family: 'PTMono';
   display: grid;
-}
-
-
-@keyframes h1glow {
-  0%    {opacity: 0;}
-  10%   {opacity: 0;}
-  10.1% {opacity: 1;}
-  10.2% {opacity: 0;}
-  20%   {opacity: 0;}
-  20.1% {opacity: 1;}
-  20.6% {opacity: 0;}
-  30%   {opacity: 0;}
-  30.1% {opacity: 1;}
-  30.5% {opacity: 1;}
-  30.6% {opacity: 0;}
-  45%   {opacity: 0;}
-  45.1% {opacity: 1;}
-  50%   {opacity: 1;}
-  55%   {opacity: 1;}
-  55.1% {opacity: 0;}
-  57%   {opacity: 0;}
-  57.1% {opacity: 1;}
-  60%   {opacity: 1;}
-  60.1% {opacity: 0;}
-  65%   {opacity: 0;}
-  65.1% {opacity: 1;}
-  75%   {opacity: 1;}
-  75.1% {opacity: 0;}
-  77%   {opacity: 0;}
-  77.1% {opacity: 1;}
-  85%   {opacity: 1;}
-  85.1% {opacity: 0;}
-  86%   {opacity: 0;}
-  86.1% {opacity: 1;}
-  100%  {opacity: 1;}
+  grid-template-columns: 25vw 42vw 27vw;
+  grid-template-rows: 21vw 15vw 17vw;
+  margin: 5% 0 0 2.7%;
 }
 
 h1 {
-  animation: h1glow 3s linear infinite;
+  font-size: 3.5vw;
+  color:  white;
+  animation: h1glow 1.5s linear infinite;
+  position: absolute;
+  margin: -67% 0 0 33%;
 }
 
-.first {
-  width: 94%;
-  margin-top: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+section {
+  border: 0.15vw solid white;
+  position: relative;
+  overflow: hidden;
+  margin-left: 1.5%;
 }
 
-.second {
-  display: flex;
-  flex-direction: column;
-  width: 66%;
-  justify-content: center;
-}
-
-.firstblock {
-  border: 3px solid white;
-
-  background-image: url(../images/img1.svg);
+.firstsection {
+  grid-column: span 2;
+  margin: 3vw 0 0 3vw;
+  color: white;
+  font-size: 2.5vw;
+  background-image: url(../images/img2.svg);
+  background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  font-size: 3vh;
+  padding: 11% 0 0 1%;
+}
+
+.secondsection {
+  grid-row: span 2;
+  margin: 3vw 3vw 0 0;
+  background-image: url(../images/texturebcg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.secondsection div {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/texture2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 103%;
+  animation: line 1s linear infinite;
+}
+
+.thirdsection {
+  grid-column: span 2;
+  margin: 0 0 0 3vw;
+}
+
+.thirdsection img {
+  width: 150%;
+  margin: -51% 0 0 -17%;
+  animation: rotate 3s ease infinite;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+.fourthsection {
+  margin: 0 0 3vw 3vw;
+  background-image: url(../images/eye.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 114%;
+}
+
+.fourthsection div {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: url(../images/line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%;
+  animation: line 4s linear infinite;
+}
+
+.fifthsection {
+  grid-column: span 2;
+  margin: 0 3vw 3vw 0;
   color: white;
+  font-size: 1.79vw;
+  padding: 1% 0 0 1%;
 }
 
-.firsttext {
-  margin-left: 1%;
-  margin-top: 20%;
-}
-
-.secondblock {
-  width: 28%;
-  height: 64%;
-  border: 3px solid white;
-}
- 
-.secondblock img {
-  width: 99%;
-}
-
-.thirdblock {
-  border: 3px solid white;
-}
-
-.thirdblock img{
-  justify-self: center;
-}

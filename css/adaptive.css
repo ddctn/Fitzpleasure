@@ -1,0 +1,167 @@
+@media screen and (min-width: 1023px) and (max-width: 1366px) {
+
+  main {
+    grid-template-columns: 33vw 27vw 37vw;
+    grid-template-rows: 31vw 18vw 21vw;
+    margin-left: 0.5%;
+  }
+  .secondsection div {
+    background-size: 103%;
+  }
+
+  .secondsection {
+    background-size: 100%;
+  }
+
+  .firstsection {
+    background-size: 180%;
+    font-size: 2.3vw;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+  main {
+    grid-template-columns: 47vw 7vw 46vw;
+    grid-template-rows: 62vw 24vw 36vw;
+    margin: 0 0 0 0.5%;
+  }
+
+  .firstsection {
+    background-size: 390%;
+    font-size: 4vw;
+  }
+
+  .thirdsection {
+    grid-column: span 3;
+    margin: 0 3vw 0 3vw;
+  }
+
+  .secondsection {
+    grid-row: span 1;
+  }
+
+  h1 {
+    font-size: 6.5vw;
+    margin: -67% 0 0 25%;
+  }
+
+  .thirdsection img {
+    margin: -51% 0 0 -21%;
+  }
+
+  .fifthsection {
+    font-size: 2.3vw;
+    padding: 2% 2% 0px 2%;
+  }
+
+}
+
+@media screen and (min-width: 361px) and (max-width: 749px) {
+
+  main {
+    grid-template-columns: 63vw 33vw;
+    grid-template-rows: 53vw 72vw 44vw 24vw;
+    margin: 2% 0 2% 2%;
+  }
+
+  h1 {
+    font-size: 7.5vw;
+    margin: -68% 0 0 23%;
+  }
+
+  .firstsection {
+    margin: 0;
+    font-size: 4vw;
+    background-size: 173%;
+  }
+
+  .secondsection {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: span 2;
+    margin: 0 11% 0 0;
+  }
+
+  .thirdsection {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: span 2;
+    margin: 0;
+  }
+
+  .fourthsection {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: span 2;
+    margin: 0;
+  }
+
+  .fourthsection div {
+    background-size: 130%;
+  }
+
+  .fifthsection {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main {
+    grid-template-columns: 63vw 33vw;
+    grid-template-rows: 45vw 44vw 44vw 34vw;
+    margin: 2% 0 2% 2.5%;
+  }
+
+  h1 {
+    font-size: 8vw;
+    margin: -64% 0 0 21%;
+  }
+
+  .firstsection {
+    margin: 0;
+    font-size: 5vw;
+    background-size: 173%;
+  }
+
+  .secondsection {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: span 2;
+    margin: 0 11% 0 0;
+  }
+
+  .thirdsection {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: span 2;
+    margin: 0;
+  }
+
+  .fourthsection {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: span 2;
+    margin: 0;
+  }
+
+  .fourthsection div {
+    background-size: 130%;
+  }
+
+  .fifthsection {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0;
+    font-size: 3vw;
+  }
+
+}
